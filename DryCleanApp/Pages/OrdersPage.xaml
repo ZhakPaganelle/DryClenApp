@@ -1,0 +1,19 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DryCleanApp.Pages.OrdersPage"
+             Title="Заказы">
+    <StackLayout Padding="20">
+        <!-- Список заказов -->
+        <ScrollView>
+            <StackLayout x:Name="OrdersStackLayout">
+                <!-- Карточки заказов будут добавлены динамически -->
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Общая сумма всех заказов -->
+        <StackLayout Padding="10" BackgroundColor="#f0f0f0">
+            <Label Text="Общая сумма всех заказов:" FontAttributes="Bold" />
+            <Label x:Name="TotalOrdersPriceLabel" Text="0" HorizontalOptions="End" FontSize="Large" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
